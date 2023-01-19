@@ -8,17 +8,17 @@ const abouts = [
   {
     title: "iOS Development",
     description: "I am an iOS Developer",
-    imgUrl: "",
+    imgUrl: images.about01,
   },
   {
     title: "iOS Design",
     description: "I am an iOS Designer",
-    imgUrl: "",
+    imgUrl: images.about02,
   },
   {
     title: "UI/UX",
     description: "I am an iOS Designer for UI/UX",
-    imgUrl: "",
+    imgUrl: images.about03,
   },
 ];
 

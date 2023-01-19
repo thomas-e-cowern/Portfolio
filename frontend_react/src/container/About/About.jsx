@@ -3,6 +3,24 @@ import { motion } from "framer-motion";
 
 import "./About.scss";
 
+const abouts = [
+  {
+    title: "iOS Development",
+    description: "I am an iOS Developer",
+    imgUrl: "",
+  },
+  {
+    title: "iOS Design",
+    description: "I am an iOS Designer",
+    imgUrl: "",
+  },
+  {
+    title: "UI/UX",
+    description: "I am an iOS Designer for UI/UX",
+    imgUrl: "",
+  },
+];
+
 const About = () => {
   return (
     <>
@@ -13,6 +31,8 @@ const About = () => {
         means
         <span>Good Business</span>
       </h2>
+
+      <div className="app__profiles"></div>
     </>
   );
 };

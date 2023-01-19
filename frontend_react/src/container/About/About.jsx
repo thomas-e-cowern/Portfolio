@@ -32,7 +32,15 @@ const About = () => {
         <span>Good Business</span>
       </h2>
 
-      <div className="app__profiles"></div>
+      <div className="app__profiles">
+        {abouts.map((about, index) => (
+          <motion.div
+            whileInView={{ opacity: 1 }}
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, type: "tween" }}
+          ></motion.div>
+        ))}
+      </div>
     </>
   );
 };

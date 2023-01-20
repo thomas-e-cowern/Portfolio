@@ -5,29 +5,29 @@ import { images } from "../../constants";
 import "./About.scss";
 import { urlFor, client } from "../../client";
 
-const abouts = [
-  {
-    title: "iOS Development",
-    description: "I am an iOS Developer",
-    imgUrl: images.about01,
-  },
-  {
-    title: "iOS Design",
-    description: "I am an iOS Designer",
-    imgUrl: images.about02,
-  },
-  {
-    title: "UI/UX",
-    description: "I am an iOS Designer for UI/UX",
-    imgUrl: images.about03,
-  },
-];
+// const abouts = [
+//   {
+//     title: "iOS Development",
+//     description: "I am an iOS Developer",
+//     imgUrl: images.about01,
+//   },
+//   {
+//     title: "iOS Design",
+//     description: "I am an iOS Designer",
+//     imgUrl: images.about02,
+//   },
+//   {
+//     title: "UI/UX",
+//     description: "I am an iOS Designer for UI/UX",
+//     imgUrl: images.about03,
+//   },
+// ];
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "abouts]';
+    const query = '*[_type == "abouts"]';
 
     client.fetch(query).then((data) => {
       setAbouts(data);
